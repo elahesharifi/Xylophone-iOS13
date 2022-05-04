@@ -25,6 +25,11 @@ class ViewController: UIViewController {
         //reduce the sender's (the button that pressed) opacity yo half
         sender.alpha = 0.5
             
+        //Code should execute after 0.2 second delay
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                
+            
+           }
     }
     
     func playSound(soundName : String) {
