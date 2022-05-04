@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         //Code should execute after 0.2 second delay
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                 
+            sender.alpha = 1.0
             
            }
     }
