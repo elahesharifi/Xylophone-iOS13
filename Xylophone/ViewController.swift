@@ -18,8 +18,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func keyPressed(_ sender: UIButton) {
+        
         // ! is for that we checked all of UIButton has title but it is for you and in definition
         playSound(soundName: sender.currentTitle!)
+        
+        //reduce the sender's (the button that pressed) opacity yo half
+        sender.alpha = 0.5
+            
     }
     
     func playSound(soundName : String) {
